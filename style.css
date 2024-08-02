@@ -1,0 +1,68 @@
+html {
+	background-color: whitesmoke;
+/*	background-image: url('./images/background.png');*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+	color: whitesmoke;
+	overflow: hidden;
+}
+
+* {
+ user-select: none; 
+ -moz-user-select: none;
+ -webkit-text-select: none;
+ -webkit-user-select: none;
+}
+
+.center {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	justify-content: center;
+}
+
+.imgcontainer {
+  position: absolute;
+  box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.imgcontainer img {
+  height: 100%;
+  width: 100%;
+}
+
+.gameArea {
+	display: flex;
+	margin: auto;
+	width: 100%;
+  height: 100%;
+  transition: all .3s ease-in;
+  align-items: center;
+	justify-content: center;
+}
+
+.pillar {
+	border: 2px solid black;
+	position: absolute;
+	background-color: #7C638E;
+	width: 100px;
+	height: 100px;
+	color: black;
+	font-size: 24px;
+}
+
+.rock {
+	border: 2px solid black;
+	position: absolute;
+	background-color:	#493c3c;
+	width: 50px;
+	height: 50px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.rockArray {
+	position: absolute;
+}
